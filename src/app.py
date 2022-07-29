@@ -1,7 +1,16 @@
-from utils import db_connect
-engine = db_connect()
-
 # your code here
+
+# Importing Libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import plotly.express as px
+import seaborn as sns
+from sklearn import tree
+from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+
 #Loading the dataset
 df_raw = pd.read_csv('https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv')
 df_raw
